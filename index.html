@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap" rel="stylesheet">
     <title>Agendamento</title>
 </head>
+
 <body>
     <header>
-        <h1>Agendar Consulta</h1>
+        <h1>Agendamento de Consulta</h1>
     </header>
     <main>
         <fieldset>
             <h2>Dados do Paciente</h2>
             <label for="nome">Nome:
-                <input type="text" placeholder="Nome completo">
+                <input name="nome" id="nome" type="text" placeholder="Nome completo" required>
             </label>
             <label for="contato">Contato:
-                <input type="text" placeholder="(21)99999-9999">
+                <input name="contato" id="contato" type="text" placeholder="(21)99999-9999" required>
             </label>
         </fieldset>
-        <fieldset>
-            <h2>Informações do Atendimento</h2>
-            <label for="servicos">Serviços: 
-                <input type="checkbox" name="servicos" value="avaliacao"> Avaliação
-                <input type="checkbox" name="servicos" value="restauracao"> Restauracao
-                <input type="checkbox" name="servicos" value="extracao"> Extração
-                <input type="checkbox" name="servicos" value="manutencao"> Manutenção
-                <input type="checkbox" name="servicos" value="limpeza"> Limpeza
-                <input type="checkbox" name="servicos" value="canal"> Canal
-                <input type="checkbox" name="servicos" value="outro"> Outro
-                <textarea cols="40" rows="3" placeholder="Observações"></textarea><br/>
-            </label>            
+        <fieldset class="servicos">
+            <h2>Dados do Atendimento</h2>
+            <h3>Serão realizados:</h3>
+            <label for="avaliacao"><input type="checkbox" name="servicos" value="avaliacao" > Avaliação</label>
 
-            <label for="duracao">Duração: <select id="duracao" name="duracao">
+            <label for="restauracao"><input type="checkbox" name="servicos" value="restauracao"> Restauração</label>
+
+            <label for="extracao"><input type="checkbox" name="servicos" value="extracao"> Extração</label>
+
+            <label for="manutencao"><input type="checkbox" name="servicos" value="manutencao"> Manutenção</label>
+
+            <label for="limpeza"><input type="checkbox" name="servicos" value="limpeza"> Limpeza</label>
+
+            <label for="canal"><input type="checkbox" name="servicos" value="canal"> Canal</label>
+
+            <label for="outro"><input type="checkbox" name="servicos" value="outro"> Outro</label>
+
+            <textarea cols="40" rows="3" placeholder="Observações"></textarea><br />
+
+
+            <label id="duracao-label" for="duracao">Duração do atendimento: </label>
+            <select id="duracao" name="duracao">
                 <option value="1">30</option>
                 <option value="2">60</option>
                 <option value="3">90</option>
                 <option value="4">120</option>
                 <option value="5">150</option>
                 <option value="6">180</option>
-            </select> minutos</label>
+            </select> minutos
 
-            
+
         </fieldset>
         <button name="proximo" onclick="location.href='./agendamento.html'">Próximo</button>
     </main>
-    
+
 </body>
+
 </html>
