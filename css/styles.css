@@ -49,10 +49,9 @@ fieldset{
     font-size: 15px;
 
     margin: 0 auto;
-    padding-bottom: 20px;
-
+    padding-bottom: 10px;
     border-bottom: 2px solid #D6CCC2;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 }
 
@@ -68,7 +67,7 @@ fieldset input{
 
 fieldset select{
     font-size: 13px;
-    margin-right: 5px;
+    margin: 5px 5px;
     border-radius: 5px;
 }
 
@@ -76,7 +75,7 @@ fieldset input[type="checkbox"]{
     display: inline;
     width: 15px;
     height: 15px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 fieldset input[type="date"]{
@@ -110,7 +109,7 @@ button{
     font-weight: 800;
     font-size: 0.9rem;
     padding: 10px 20px;
-    margin: 0 auto;
+    margin: 10px auto;
     text-transform:uppercase;
 }
 button:hover{
