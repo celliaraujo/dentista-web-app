@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+</head>
+<body>
+    <header>
+        <h1>Agendar Consulta</h1>
+    </header>
+    <main>
+        <fieldset>
+            <h2>Dados do Paciente</h2>
+            <label for="nome">Nome:
+                <input type="text" placeholder="Nome completo">
+            </label>
+            <label for="contato">Contato:
+                <input type="text" placeholder="(21)99999-9999">
+            </label>
+        </fieldset>
+        <fieldset>
+            <h2>Informações do Atendimento</h2>
+            <label for="servicos">Serviços: 
+                <input type="checkbox" name="servicos" value="avaliacao"> Avaliação
+                <input type="checkbox" name="servicos" value="restauracao"> Restauracao
+                <input type="checkbox" name="servicos" value="extracao"> Extração
+                <input type="checkbox" name="servicos" value="manutencao"> Manutenção
+                <input type="checkbox" name="servicos" value="limpeza"> Limpeza
+                <input type="checkbox" name="servicos" value="canal"> Canal
+                <input type="checkbox" name="servicos" value="outro"> Outro
+                <textarea cols="40" rows="3" placeholder="Observações"></textarea><br/>
+            </label>            
+
+            <label for="duracao">Duração: <select id="duracao" name="duracao">
+                <option value="1">30</option>
+                <option value="2">60</option>
+                <option value="3">90</option>
+                <option value="4">120</option>
+                <option value="5">150</option>
+                <option value="6">180</option>
+            </select> minutos</label>
+
+            
+        </fieldset>
+        <button name="proximo" onclick="location.href='./agendamento.html'">Próximo</button>
+    </main>
+    
+</body>
+</html>
