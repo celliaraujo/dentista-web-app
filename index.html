@@ -17,7 +17,7 @@
     </header>
     <main>
         <fieldset>
-            <h2>Dados do Paciente</h2>
+            <h2>Dados do Paciente:</h2>
             <label for="nome">Nome:
                 <input name="nome" id="nome" type="text" placeholder="Nome completo" required>
             </label>
@@ -25,24 +25,27 @@
                 <input name="contato" id="contato" type="text" placeholder="(21)99999-9999" required>
             </label>
         </fieldset>
-        <fieldset class="servicos">
-            <h2>Dados do Atendimento</h2>
-            <h3>Serão realizados:</h3>
-            <label for="avaliacao"><input type="checkbox" name="servicos" value="avaliacao" > Avaliação</label>
+        <fieldset>
+            <h2>Dados do Atendimento:</h2>
+            <div class="servicos">
+            <div class="servicos-select">
+                <label for="avaliacao"><input type="checkbox" name="servicos" value="avaliacao" > Avaliação</label>
 
-            <label for="restauracao"><input type="checkbox" name="servicos" value="restauracao"> Restauração</label>
+                <label for="restauracao"><input type="checkbox" name="servicos" value="restauracao"> Restauração</label>
 
-            <label for="extracao"><input type="checkbox" name="servicos" value="extracao"> Extração</label>
+                <label for="extracao"><input type="checkbox" name="servicos" value="extracao"> Extração</label>
+            </div>
+            <div class="servicos-select">
+                <label for="manutencao"><input type="checkbox" name="servicos" value="manutencao"> Manutenção</label>
 
-            <label for="manutencao"><input type="checkbox" name="servicos" value="manutencao"> Manutenção</label>
+                <label for="limpeza"><input type="checkbox" name="servicos" value="limpeza"> Limpeza</label>
 
-            <label for="limpeza"><input type="checkbox" name="servicos" value="limpeza"> Limpeza</label>
-
-            <label for="canal"><input type="checkbox" name="servicos" value="canal"> Canal</label>
+                <label for="canal"><input type="checkbox" name="servicos" value="canal"> Canal</label>
+            </div>
 
             <label for="outro"><input type="checkbox" name="servicos" value="outro"> Outro</label>
 
-            <textarea cols="40" rows="3" placeholder="Observações"></textarea><br />
+            <textarea cols="40" rows="2" placeholder="Observações"></textarea><br /></div>
 
 
             <label id="duracao-label" for="duracao">Duração do atendimento: </label>

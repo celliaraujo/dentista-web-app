@@ -13,11 +13,14 @@ header{
 
 header h1{
     color: #ffffff;
-    padding: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
     
 }
 
 body{
+    width: 100%;
+    height: 100vh;
     background-color: #EDEDE9;
     text-align: center;
 }
@@ -27,14 +30,14 @@ main{
 }
 
 fieldset h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: #634b3e;
 }
 
 fieldset h3{
     font-size: 1.1rem;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 fieldset{
@@ -43,6 +46,7 @@ fieldset{
     max-width: 500px;
     border: none;
     flex-direction: column;
+    font-size: 15px;
 
     margin: 0 auto;
     padding-bottom: 20px;
@@ -58,12 +62,12 @@ fieldset input{
     margin-bottom: 10px;
     margin-top: 5px;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 13px;
     padding-left: 5px;
 }
 
 fieldset select{
-    font-size: 15px;
+    font-size: 13px;
     margin-right: 5px;
     border-radius: 5px;
 }
@@ -79,10 +83,17 @@ fieldset input[type="date"]{
     width: auto;
 }
 
-.servicos label{
+.servicos{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: first baseline;
+}
+
+.servicos-select{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
 }
 
 #duracao-label{
@@ -97,7 +108,7 @@ button{
     border: 0;
     border-radius: 20px;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 20px;
     margin: 0 auto;
     text-transform:uppercase;
@@ -110,7 +121,7 @@ textarea{
     width: 100%;
     border-radius: 5px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 13px;
     padding: 7px;
     
 }
