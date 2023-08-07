@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;800&display=swap" rel="stylesheet">
     <title>Agendamento</title>
 </head>
 <body>
@@ -10,17 +14,19 @@
         <h1>Horários Disponíveis</h1>
     </header>
     <main>
-        <label for="data">
-            <input type="date">
-        </label>
+        
         <fieldset>
-            <legend><strong>Horários Disponíveis:</strong></legend>
+            <legend><strong>Horários Disponíveis para o dia:</strong></legend>
+
+            <label for="data">
+                <input type="date">
+            </label>
 
             <div id="horarios-disponiveis" class="horarios-disponiveis"></div>
 
         </fieldset>
 
-        <input type="submit" value="Confirmar Agendamento">
+        <button name="confirmar">Confirmar Agendamento</button>
     </main>
     
 </body>

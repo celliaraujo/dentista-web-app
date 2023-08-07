@@ -75,6 +75,10 @@ fieldset input[type="checkbox"]{
     margin-right: 10px;
 }
 
+fieldset input[type="date"]{
+    width: auto;
+}
+
 .servicos label{
     display: flex;
     flex-wrap: wrap;
@@ -89,14 +93,12 @@ fieldset input[type="checkbox"]{
 }
 
 button{
-    width: 30%;
-    height: 35px;
     background-color:#D5BDAF;
     border: 0;
     border-radius: 20px;
     font-weight: 800;
     font-size: 1rem;
-
+    padding: 10px 20px;
     margin: 0 auto;
     text-transform:uppercase;
 }
