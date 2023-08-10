@@ -4,11 +4,12 @@ fieldset{
 }
 
 li{
-    width: 50px;
+    width: 40px;
     height: 40px;
+    min-width: 40px;
+    max-width: ;
     list-style: none;
     text-align: center;
-    border: 1px solid #38A3A5;
     border-radius: 10px;
     color: #38A3A5;
     display: flex;
@@ -17,8 +18,10 @@ li{
 }
 
 ul{
+    width: 96%;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 5px;
 }
 
 .mes{
@@ -37,7 +40,6 @@ ul{
 
 .calendario{
     width: 90%;
-    border: 1px solid #38A3A5;
     padding: 16px;
     border-radius: 10px;
     display: flex;
@@ -46,3 +48,36 @@ ul{
     align-items:center ;
 }
 
+.dia-valido{
+    border: none;
+    background-color: #89c3c4;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+.dia-selecionavel{
+    border: none;
+    background-color: #38A3A5;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+.dia-invalido{
+    border: none;
+    background-color: #89c3c4;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+.outro-mes{
+    background-color: #c4dac6;
+    color: #95ad96;
+}
+
+.domingo{
+    background-color: #e07f6e;
+    color: #fff;
+}
