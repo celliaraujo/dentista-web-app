@@ -48,12 +48,12 @@ function gerarSemanas() {
             if (diaDoMes > 0 && diaDoMes <= totalDias) {
                 diaLi.classList.add('dia-valido');
                 if (diaDoMes >= diaMes) {
-                    diaLi.classList.add('dia-selecionavel');
+                    diaLi.classList.add('dia');
+                    diaLi.classList.add('selecionavel');
                 }
                 diaLi.innerHTML = diaDoMes;
             } else {
                 diaLi.classList.add('dia-invalido');
-
 
                 var novaData = new Date();
 
@@ -62,11 +62,16 @@ function gerarSemanas() {
                 diaLi.innerHTML = novaData.getDate();
                 diaLi.classList.add('outro-mes');
 
+                if(diaDoMes > totalDias){
+                    diaLi.classList.add('selecionavel');
+                }
+
                 console.log(`${novaData}`);
             }
             if(dia == 0){
                 if(!diaLi.classList.contains('outro-mes')){
                     diaLi.classList.add('domingo');
+                    diaLi.classList.remove('selecionavel');
                 }
                 
             }
